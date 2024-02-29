@@ -1,5 +1,5 @@
 import "./Header.scss"
-import wizardImgSrc from "../../assets/imgs/wizard.jpg"
+import wizardImgSrc from "../../assets/imgs/wizard-dog.svg"
 
 export const Header = () => {
   return (
