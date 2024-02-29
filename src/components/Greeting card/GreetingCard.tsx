@@ -1,5 +1,5 @@
 type GreetingCardProps = {
-    timeOfDay : "Morning" | "Evening" | "Night"
+    timeOfDay : String
 }
 
 export const GreetingCard = ({timeOfDay} : GreetingCardProps) => {
