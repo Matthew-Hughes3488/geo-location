@@ -1,3 +1,5 @@
+import "./GreetingCard.scss"
+
 type GreetingCardProps = {
     timeOfDay : String
 }
