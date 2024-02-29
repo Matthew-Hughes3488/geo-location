@@ -1,0 +1,17 @@
+.header {
+    max-width: 100vw;
+    max-height: 20%;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+    &__image {
+        width: 5rem;
+        height: auto;
+    }
+
+    &__title {
+        margin: auto;
+    }
+}
