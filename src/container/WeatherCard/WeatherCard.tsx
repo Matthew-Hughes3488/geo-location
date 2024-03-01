@@ -39,21 +39,21 @@ export const WeatherCard = ({ coordinates }: WeatherCardProps) => {
     <section className="weather-card">
       {weatherData ? (
         <>
-          <h1 className="weather-conditions">
+          <h1 className="weather-card__conditons">
             {weatherData.current.condition.text}
           </h1>
           <img src={weatherData.current.condition.icon} alt="" />
-          <ul>
-            <li>Temprature: {weatherData.current.temp_c}C</li>
-            <li>Feels Like: {weatherData.current.feelslike_c}C</li>
-            <li>Wind Speed: {weatherData.current.wind_mph}mph</li>
-            <li>Humidity: {weatherData.current.humidity}%</li>
-            <li>Cloud: {weatherData.current.cloud}</li>
+          <ul className="weather-card__list">
+            <li className="weather-card__list--item">Temprature: {weatherData.current.temp_c}C</li>
+            <li className="weather-card__list--item">Feels Like: {weatherData.current.feelslike_c}C</li>
+            <li className="weather-card__list--item">Wind Speed: {weatherData.current.wind_mph}mph</li>
+            <li className="weather-card__list--item">Humidity: {weatherData.current.humidity}%</li>
+            <li className="weather-card__list--item">Cloud: {weatherData.current.cloud}</li>
           </ul>
         </>
       ) : (
         <h1 className="weather-card__error-text">
-          Sorry, we could not find any weather data
+          Sorry, the detect weather spell seems to have failed
         </h1>
       )}
     </section>
