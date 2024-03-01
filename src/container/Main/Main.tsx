@@ -1,6 +1,7 @@
 import "./Main.scss";
-import { GreetingCard } from "../../components/Greeting card/GreetingCard";
+import { GreetingCard } from "../../components/GreetingCard/GreetingCard";
 import { useEffect, useState } from "react";
+import { Coordiants } from "../../types/Coordiants";
 
 const getGreeting = (currentHour: number): String => {
   if (currentHour < 12) return "Morning";
@@ -10,10 +11,7 @@ const getGreeting = (currentHour: number): String => {
 };
 
 export const Main = () => {
-  const [location, setLocation] = useState<{
-    latitude: number;
-    longitude: number;
-  } | null>(null);
+  const [location, setLocation] = useState<Coordiants>();
   const currentTime = new Date();
   const currentHour = currentTime.getHours();
 
