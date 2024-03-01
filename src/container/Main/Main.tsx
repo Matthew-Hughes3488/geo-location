@@ -36,7 +36,7 @@ export const Main = () => {
   return (
     <main className="main-content">
       <GreetingCard timeOfDay={getGreeting(currentHour)} />
-      <WeatherCard coordinates={location}/>
+      {location && <WeatherCard coordinates={location} />}
     </main>
   );
 };
