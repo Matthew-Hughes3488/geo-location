@@ -1,5 +1,6 @@
 import "./Main.scss"
 import { GreetingCard } from "../../components/Greeting card/GreetingCard";
+import { useEffect, useState } from "react";
 
 const getGreeting = (currentHour : number) : String =>{
     if(currentHour < 12)
@@ -14,9 +15,32 @@ const getGreeting = (currentHour : number) : String =>{
 
 export const Main = () => {
 
+    const [location, setLocation] = useState<{ latitude: number, longitude: number } | null>(null);
     const currentTime = new Date();
     const currentHour = currentTime.getHours();
-    const greeting = getGreeting(currentHour);
+
+    useEffect(() => {
+        const getLocation = () => {
+          if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(
+              (position) => {
+                const { latitude, longitude } = position.coords;
+                setLocation({ latitude, longitude });
+              },
+              (error) => {
+                console.error("Error getting geolocation:", error);
+              }
+            );
+          } else {
+            console.log("Geolocation is not supported");
+          }
+        };
+    
+        getLocation();
+    
+        return () => {
+        };
+      }, []);
 
   return (
     <main className="main-content">
