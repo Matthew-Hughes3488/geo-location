@@ -24,8 +24,8 @@ export const WeatherCard = ({ coordinates }: WeatherCardProps) => {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
 
-        const data: WeatherApiResponse = await response.json();
-        setWeatherData(data);
+      const data: WeatherApiResponse = await response.json();
+      setWeatherData(data);
     } catch (error) {
       console.error("Error fetching weather data:", error);
     }
