@@ -41,7 +41,7 @@ type CurrentWeather = {
   gust_kph: number;
 };
 
-type WeatherApiResponse = {
+export type WeatherApiResponse = {
   location: LocationDetails;
   current: CurrentWeather;
 };
