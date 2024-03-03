@@ -11,8 +11,6 @@
     color: $color-blue;
     border: unset;
     outline: unset;
-    font-size: 1.5rem;
-
     }
 
     &--input-bar {
@@ -22,7 +20,7 @@
     }
 
     &--submit {
-        font-size: 4rem;
+        font-size: 3rem;
 
         transition: transform 0.3s ease;
 
@@ -33,4 +31,18 @@
         }
     }
   }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .form-card{
+        &__input-form{
+            *{
+            font-size: 2rem;
+            }
+
+            &--submit{
+                font-size: 4rem;
+            }
+        }
+    }
 }
