@@ -1,0 +1,44 @@
+@use "../../Variables.scss" as *;
+
+.task-bar {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    color: $color-blue;
+    font-size: 1.5rem;
+
+    &__task{
+        margin-right: 0.5rem;
+        &--completed{
+            text-decoration: line-through;
+            color: grey;
+        }
+    }
+
+    &__date{
+        display: none;
+    }
+
+    &__checkbox{
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .task-bar{
+
+        &__task{
+            font-size: 1.5rem;
+        }
+
+        &__date{
+            display: unset;
+            font-size: 1.5rem;
+
+            &--completed{
+                text-decoration: line-through;
+                color: grey;
+            }
+        }
+    }
+}

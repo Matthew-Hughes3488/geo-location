@@ -1,0 +1,47 @@
+@use "/src/Variables.scss" as *;
+
+.form-card {
+  margin: 1rem;
+  color: $color-blue;
+
+  &__input-form {
+
+    *{
+    color: $color-blue;
+    border: unset;
+    outline: unset;
+    font-size: 1.2rem;
+    }
+
+    &--input-bar {
+      border-radius: 1px;
+      padding: 0.5rem;
+    }
+
+    &--submit {
+        font-size: 3rem;
+
+        transition: transform 0.3s ease;
+
+        &:hover{
+          cursor: pointer;
+          transform: scale(1.5);
+  
+        }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .form-card{
+        &__input-form{
+            *{
+            font-size: 2rem;
+            }
+
+            &--submit{
+                font-size: 4rem;
+            }
+        }
+    }
+}

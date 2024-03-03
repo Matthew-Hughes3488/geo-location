@@ -1,20 +1,24 @@
 @use "/src/Variables.scss" as *;
 
-.greeting-card{
+.tasks{
     padding: 1rem;
+    background-color: $color-grey;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    color: $color-blue;
+
+    &__title{
+        color: $color-blue;
+        margin: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: $desktop-width) {
-    .greeting-card {
-        font-size: 1.5rem;
-
+    .tasks{
         &__title{
             font-size: 2rem;
         }
     }
-  }
+}
