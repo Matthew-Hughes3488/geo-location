@@ -6,3 +6,8 @@
     box-sizing: border-box;
     font-family: $global-font;
 }
+
+.app{
+    display: flex;
+    flex-direction: column;
+}

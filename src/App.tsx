@@ -6,10 +6,10 @@ import { Main } from "./container/Main/Main"
 function App() {
 
   return (
-    <>
-    <Header/>
-    <Main/>
-    </>
+    <section className="app">
+      <Header/>
+      <Main/>
+    </section>
   )
 }
 
