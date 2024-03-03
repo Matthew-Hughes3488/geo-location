@@ -20,5 +20,23 @@
     &__checkbox{
         margin: 1rem;
     }
+}
 
+@media screen and (min-width: $desktop-width) {
+    .task-bar{
+
+        &__task{
+            font-size: 1.5rem;
+        }
+
+        &__date{
+            display: unset;
+            margin: 1rem;
+
+            &--completed{
+                text-decoration: line-through;
+                color: grey;
+            }
+        }
+    }
 }

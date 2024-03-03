@@ -14,12 +14,13 @@ export const TaskBar = ({ task }: TaskBarProps) => {
   };
 
   const taskClassName = completed ? "task-bar__task task-bar__task--completed" : "task-bar__task"
+  const dateClassName = completed ? "task-bar__date task-bar__date--completed" : "task-bar__date"
 
   return (
     <section className="task-bar">
       <input onClick={updateTask} className="task-bar__checkbox" type="checkbox" />
       <h1 className={taskClassName}>{task.task}</h1>
-      <h2 className="task-bar__date">{task.dateCreated.toDateString()}</h2>
+      <h2 className={dateClassName}>{task.dateCreated.toDateString()}</h2>
     </section>
   );
 };
