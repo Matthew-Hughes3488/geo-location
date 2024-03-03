@@ -1,0 +1,24 @@
+@use "../../Variables.scss" as *;
+
+.task-bar {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    color: $color-blue;
+
+    &__task{
+        &--completed{
+            text-decoration: line-through;
+            color: grey;
+        }
+    }
+
+    &__date{
+        display: none;
+    }
+
+    &__checkbox{
+        margin: 1rem;
+    }
+
+}
