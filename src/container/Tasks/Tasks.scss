@@ -3,11 +3,15 @@
 .tasks{
     padding: 1rem;
     background-color: $color-grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__title{
         color: $color-blue;
         margin: 1rem;
         font-size: 1.5rem;
+        text-align: center;
     }
 }
 
