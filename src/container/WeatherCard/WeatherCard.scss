@@ -8,3 +8,13 @@
         list-style-type: none;
     }
 }
+
+@media screen and (min-width: $desktop-width) {
+    .weather-card {
+        font-size: 1.5rem;
+
+        &__conditons{
+            font-size: 2rem;
+        }
+    }
+  }
