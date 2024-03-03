@@ -37,8 +37,10 @@ export const Main = () => {
   return (
     <main className="main-content">
       <GreetingCard timeOfDay={getGreeting(currentHour)} />
-      {location && <WeatherCard coordinates={location} />}
-      <Tasks/>
+      <section className="main-content__tasks-and-weather">
+        {location && <WeatherCard coordinates={location} />}
+        <Tasks />
+      </section>
     </main>
   );
 };

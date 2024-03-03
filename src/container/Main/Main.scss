@@ -8,6 +8,14 @@
     *{
         background-color: $color-grey;
     }
+}
 
+@media screen and (min-width: $desktop-width) {
+    .main-content{
+        &__tasks-and-weather{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
     
+        } 
+    }
 }
