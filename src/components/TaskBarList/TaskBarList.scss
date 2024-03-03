@@ -6,7 +6,18 @@
     flex-direction: column;
     background-color: $color-grey;
     color: $color-blue;
+
     &__title{
         text-align: unset;
+        margin: 1rem;
     }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .task-list{
+        &__title{
+            font-size: 2rem;
+        }
+    }
+    
 }
