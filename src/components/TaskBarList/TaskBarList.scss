@@ -1,0 +1,12 @@
+@use "/src/Variables.scss" as *;
+
+.task-list{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-grey;
+    color: $color-blue;
+    &__title{
+        text-align: unset;
+    }
+}

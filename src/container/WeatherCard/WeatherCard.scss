@@ -1,8 +1,12 @@
 @use "/src/Variables.scss" as *;
 
 .weather-card{
-    color: $color-blue;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $color-blue;
 
     &__list{
         list-style-type: none;
