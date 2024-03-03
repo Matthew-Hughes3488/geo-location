@@ -1,0 +1,10 @@
+@use "/src/Variables.scss" as *;
+
+.weather-card{
+    color: $color-blue;
+    margin: 1rem;
+
+    &__list{
+        list-style-type: none;
+    }
+}
