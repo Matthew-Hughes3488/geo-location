@@ -1,0 +1,20 @@
+@use "/src/Variables.scss" as *;
+
+.tasks{
+    padding: 1rem;
+    background-color: $color-grey;
+
+    &__title{
+        color: $color-blue;
+        margin: 1rem;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .tasks{
+        &__title{
+            font-size: 2rem;
+        }
+    }
+    
+}
