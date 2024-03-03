@@ -3,6 +3,7 @@ import { GreetingCard } from "../../components/GreetingCard/GreetingCard";
 import { useEffect, useState } from "react";
 import { Coordiants } from "../../types/Coordiants";
 import { WeatherCard } from "../WeatherCard/WeatherCard";
+import { Tasks } from "../Tasks/Tasks";
 
 const getGreeting = (currentHour: number): String => {
   if (currentHour < 12) return "Morning";
@@ -37,6 +38,7 @@ export const Main = () => {
     <main className="main-content">
       <GreetingCard timeOfDay={getGreeting(currentHour)} />
       {location && <WeatherCard coordinates={location} />}
+      <Tasks/>
     </main>
   );
 };
