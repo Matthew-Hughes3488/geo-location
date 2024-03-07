@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler, FormEventHandler } from 'react'
+import { ChangeEventHandler, FormEventHandler } from 'react'
 import "./NewTaskBar.scss"
 
 type NewTaskBarProps = {

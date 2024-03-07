@@ -1,4 +1,3 @@
-import React from "react";
 import { Task } from "../../types/Task";
 import { TaskBar } from "../TaskBar/TaskBar";
 import "./TaskBarList.scss";
